@@ -19,8 +19,8 @@
         }
     </style>
 </head>
-<body>
-    <div style="background:#C0C0C0">
+<body style="background:#C0C0C0">
+    <div>
     
        <h1 align="center">CUTE CAR.</h1>
       <h2 align="center">移動遙控車 一台500</h2>
@@ -86,7 +86,7 @@
         var loader = new THREE.ColladaLoader();
 
         var mesh;
-        loader.load("../assets/models/dae/Truck_dae.dae", function (result) {
+        loader.load("../models/dae/Truck_dae.dae", function (result) {
             mesh = result.scene.children[0].children[0].clone();
             mesh.scale.set(4, 4, 4);
             scene.add(mesh);
@@ -131,5 +131,4 @@
 </script>
 
 </body>
-<footer>11</footer>
 </html>
